@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+}
+
+h1,h2 {
+    font-family: 'SF Pro Text Bold';
+    margin-left: 5px;
+    color: #000000;
+}
+
+.eb-btn {
+    margin: 5px;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.container > * {
+    flex: 1;
+    padding: 10px;
+}
+
+.container > .dark {
+    background-color: #000000;
+}
+
+.container > div.dark > h1, h2 {
+    color: #ffffff;
+}
+
+.container > div.light > h2, h1 {
+    color: #000000;
+}

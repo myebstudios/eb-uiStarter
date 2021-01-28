@@ -1,0 +1,63 @@
+@import '../../variables';
+
+.eb-btn {
+    min-width: 128px;
+    height: 48px;
+    border-radius: 4px;
+    padding: 12px 24px;
+    border: none;
+    background-color: $base-color;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    font: $body-regular;
+
+    &:hover {
+        box-shadow: $base-color-shadow;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        background-color: rgba(158, 158, 158, 0.25);
+        color: rgba(153, 153, 153, 0.5);
+        border: none;
+        box-shadow: none;
+    }
+
+    &.dim {
+        background: rgba(158, 158, 158, 0.25);
+        color: #000000;
+
+        &:hover {
+            background-color: transparent;
+            box-shadow: $base-color-dim-shadow;
+        }
+
+        &:disabled {
+            cursor: not-allowed;
+            background-color: rgba(158, 158, 158, 0.25);
+            color: rgba(153, 153, 153, 0.5);
+            border: none;
+            box-shadow: none;
+
+        }
+    }
+
+    &.ghost {
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        background-color: transparent;
+        color: #000000;
+
+        &:hover {
+            border-color: $border-gray;
+            box-shadow: $base-color-dim-shadow;
+        }
+
+        &:disabled {
+            box-shadow: none;
+            border-color: #E0E0E0;
+            color: #E0E0E0;
+        }
+    }
+}

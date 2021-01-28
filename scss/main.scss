@@ -1,0 +1,11 @@
+@font-face{
+    src: url('../fonts/FontsFree-Net-SFProText-Bold.ttf');
+    font-family: 'SF Pro Text Bold';
+}
+
+@font-face{
+    src: url('../fonts/FontsFree-Net-SFProText-Regular.ttf');
+    font-family: 'SF Pro Text Regular';
+}
+
+@import './components/button/button-light', './components/button/button-dark';
