@@ -8,7 +8,7 @@ h1,h2 {
     color: #000000;
 }
 
-.eb-btn {
+.eb-btn, .eb-field {
     margin: 5px;
 }
 

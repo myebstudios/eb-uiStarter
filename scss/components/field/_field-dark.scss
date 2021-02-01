@@ -1,0 +1,33 @@
+.eb-field {
+
+    &.dark {
+
+        input {
+
+            color: #ffffff;
+
+            &::placeholder {
+                color: #C4C4C4;
+            }
+
+            &:disabled {
+                
+                &::placeholder {
+                    color: #707070;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+div.dark * input[type="number"] {
+    color: #ffffff;
+
+    &:disabled {
+        color: #707070;
+    }
+}

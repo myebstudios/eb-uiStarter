@@ -1,0 +1,51 @@
+@import '../../variables';
+
+.eb-field {
+
+    width: 306px;
+    border-radius: 4px;
+    font: $body-regular;
+
+    label {
+        color: #707070;
+        // position: absolute;
+        // transform: translate(16px, 12px);
+    }
+
+    input {
+        border: none;
+        outline: none;
+        width: 100%;
+        height: 48px;
+        background: rgba(158, 158, 158, 0.25);
+        padding-left: 16px;
+        font: $body-regular;
+        border-radius: 4px;
+        margin-top: 5px;
+
+        &:hover, &:focus {
+            background-color: transparent;
+            box-shadow: $base-color-shadow;
+        }
+
+        &:disabled {
+            cursor: not-allowed;
+            background: rgba(158, 158, 158, 0.25);
+
+            &::placeholder {
+                color: #C4C4C4;
+            }
+            
+            &:hover {
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+div * input[type="number"] {
+
+    &:disabled {
+        color: #C4C4C4;
+    }
+}

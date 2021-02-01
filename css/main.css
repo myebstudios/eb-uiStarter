@@ -1,3 +1,8 @@
+/* eb-uiStarter v0.1
+By Esoe B.Studios */
+
+
+
 @font-face {
   src: url("../fonts/FontsFree-Net-SFProText-Bold.ttf");
   font-family: 'SF Pro Text Bold';
@@ -96,5 +101,107 @@
 .eb-btn.dark.ghost:disabled {
   border-color: #4d4d4d;
   color: #4D4D4D;
+}
+
+.eb-field {
+  width: 306px;
+  border-radius: 4px;
+  font: normal 400 16px/24px "SF Pro Text Regular";
+}
+
+.eb-field label {
+  color: #707070;
+}
+
+.eb-field input {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 48px;
+  background: rgba(158, 158, 158, 0.25);
+  padding-left: 16px;
+  font: normal 400 16px/24px "SF Pro Text Regular";
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.eb-field input:hover, .eb-field input:focus {
+  background-color: transparent;
+  -webkit-box-shadow: 0 0 1px 4px rgba(50, 129, 226, 0.6);
+          box-shadow: 0 0 1px 4px rgba(50, 129, 226, 0.6);
+}
+
+.eb-field input:disabled {
+  cursor: not-allowed;
+  background: rgba(158, 158, 158, 0.25);
+}
+
+.eb-field input:disabled::-webkit-input-placeholder {
+  color: #C4C4C4;
+}
+
+.eb-field input:disabled:-ms-input-placeholder {
+  color: #C4C4C4;
+}
+
+.eb-field input:disabled::-ms-input-placeholder {
+  color: #C4C4C4;
+}
+
+.eb-field input:disabled::placeholder {
+  color: #C4C4C4;
+}
+
+.eb-field input:disabled:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+div * input[type="number"]:disabled {
+  color: #C4C4C4;
+}
+
+.eb-field.dark input {
+  color: #ffffff;
+}
+
+.eb-field.dark input::-webkit-input-placeholder {
+  color: #C4C4C4;
+}
+
+.eb-field.dark input:-ms-input-placeholder {
+  color: #C4C4C4;
+}
+
+.eb-field.dark input::-ms-input-placeholder {
+  color: #C4C4C4;
+}
+
+.eb-field.dark input::placeholder {
+  color: #C4C4C4;
+}
+
+.eb-field.dark input:disabled::-webkit-input-placeholder {
+  color: #707070;
+}
+
+.eb-field.dark input:disabled:-ms-input-placeholder {
+  color: #707070;
+}
+
+.eb-field.dark input:disabled::-ms-input-placeholder {
+  color: #707070;
+}
+
+.eb-field.dark input:disabled::placeholder {
+  color: #707070;
+}
+
+div.dark * input[type="number"] {
+  color: #ffffff;
+}
+
+div.dark * input[type="number"]:disabled {
+  color: #707070;
 }
 /*# sourceMappingURL=main.css.map */
